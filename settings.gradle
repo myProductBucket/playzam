@@ -1,0 +1,2 @@
+include ':app', ':BaseKiipUtils'
+include ':viewpagerindicator'

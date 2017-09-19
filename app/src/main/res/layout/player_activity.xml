@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webview"
+            android:background="@android:color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/splash_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/shuffle"
+                android:layout_width="0.0dip"
+                android:src="@drawable/ic_action_shuffle"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:id="@+id/prev"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_rewind"
+                android:background="@android:color/transparent"
+                android:layout_weight="1.0" />
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_play_over_video"
+                android:background="@android:color/transparent"
+                android:layout_weight="1.0" />
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="0.0dip"
+                android:visibility="gone"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_pause_over_video"
+                android:background="@android:color/transparent"
+                android:layout_weight="1.0" />
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_fast_forward"
+                android:background="@android:color/transparent"
+                android:layout_weight="1.0" />
+            <ImageButton
+                android:id="@+id/repeat"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_repeat"
+                android:background="@android:color/transparent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+            android:background="#fff3f3f3"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/list_row_selector"
+                />
+        </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

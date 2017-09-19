@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView">
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        tools:context=".SongListActivity">
+
+        <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sync New Songs!"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="#fff"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+        <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:drawablePadding="5dp"
+            android:text="Pull down to refresh..."
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#fff"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal" />
+        <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Last updated: 11/12/2015 1:10AM"
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#fff"
+            android:id="@+id/lastupdate"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+     />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:background="@android:color/transparent"
+        >
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sync Now!"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:background="@drawable/playzam_btn"
+            android:id="@+id/sync" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

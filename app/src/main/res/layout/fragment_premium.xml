@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:text="Buy PlayZam Premium and enjoy:"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="12dp">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TableRow android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:text="•" />
+            <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Unlimited syncs with Shazam" />
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:text="•" />
+            <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+                android:layout_column="2"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:text="No advertisements" />
+        </TableRow>
+        <TableRow android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:text="•" />
+            <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Save your playlist forever!" />
+        </TableRow>
+    </TableLayout>
+        </RelativeLayout>
+     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gplaybtn"
+        android:src="@drawable/gplaybtn"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
+</RelativeLayout>

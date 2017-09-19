@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/playzam_bg_purple"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8">
+
+
+    <RelativeLayout
+        android:id="@+id/first_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/first_item"
+        android:layout_above="@+id/fifth_item"
+        android:layout_gravity="center_horizontal">
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/fifth_item"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/sixth_item">
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:padding="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sixth_item"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:stateListAnimator="@null"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:background="@drawable/playzam_btn_bg"
+                android:id="@+id/nextbtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:stateListAnimator="@null"
+                android:text="Got it"
+                android:textColor="@android:color/white"
+                android:background="@drawable/playzam_btn_bg"
+                android:id="@+id/gotitbtn"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+            <Button
+                android:id="@+id/skip"
+                android:background="@null"
+                android:shadowColor="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gotitbtn"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:text="Next >>"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+    </RelativeLayout>
+
+</LinearLayout>

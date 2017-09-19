@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6C00FF">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+     >
+
+        <com.hellcoderz.ashutosh.playzam.helpers.CircularNetworkImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/icprofilepic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@+id/icprofilepic"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/icusername"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btnshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/share_btn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Share"
+            android:stateListAnimator="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+        </RelativeLayout>
+
+
+</RelativeLayout>

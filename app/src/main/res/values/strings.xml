@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Playzam</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="icon_lock">&#xf13e;</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="search_title">Search song</string>
+    <string name="progress_message">Login</string>
+
+    <string name="nav_item_home">My Playlist</string>
+    <string name="nav_item_sync">Trending</string>
+    <string name="nav_item_premium">Go Premium</string>
+    <string name="nav_item_agreement">User agreement</string>
+    <string name="nav_item_support">Support</string>
+    <string name="nav_item_version">Version</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-9412805248701621/9652719596</string>
+
+    <string name="playzam_tos">PlayZam’s &lt;a href="http://playzam.com"> Terms of Service&lt;/a></string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_sync</item>
+        <item>@string/nav_item_premium</item>
+        <item>@string/nav_item_agreement</item>
+        <item>@string/nav_item_support</item>
+        <item>@string/nav_item_version</item>
+        <item>@string/nav_item_logout</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/playzam_bg_purple"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.8"
+        android:id="@+id/layoutContainer"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/logo"
+                android:layout_above="@+id/sign_in_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp" />
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="41dp" />
+
+                <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:text="Don't have a Google account?"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_above="@+id/textView4" />
+                <Button
+                    android:id="@+id/textView4"
+                    android:background="@null"
+                    android:shadowColor="@android:color/transparent"
+                    android:stateListAnimator="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:text="Create one. It’s quick and easy!"
+                    android:layout_alignParentBottom="true" />
+
+
+            </RelativeLayout>
+
+            </LinearLayout>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/background_light"
+                    android:layout_marginTop="15dp"
+                     />
+    <RelativeLayout
+        android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:id="@+id/layoutContainer2" android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+            <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+                android:padding="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By continuing, you agree to"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:gravity="center|bottom"
+                android:layout_gravity="center|bottom"
+                android:id="@+id/textView2"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:layout_centerVertical="true"
+                android:layout_above="@+id/textView1" />
+                <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:autoLink="web"
+                    android:gravity="center|bottom"
+                    android:layout_gravity="center|bottom"
+                    android:id="@+id/textView1"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1">
+        </RelativeLayout>
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>

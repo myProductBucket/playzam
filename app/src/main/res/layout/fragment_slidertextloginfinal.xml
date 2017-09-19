@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/third_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzamMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/welcome"
+            android:text="SYNC WITH SHAZAM"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fourth_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/third_item"
+        android:layout_gravity="center_horizontal">
+
+
+        <com.hellcoderz.ashutosh.playzam.helpers.TextViewPlayzam
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Log in to your Shazam account using the “continue with facebook” button. You’re two clicks away!"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/tv"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>
